@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora de gorjeta</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Calculadora de gorjeta</title>
 </head>
 <body>
     <header>
@@ -34,15 +38,16 @@
         </div>
     </div>
     <div class="pessoas">
+    <div class="textos">
         <label for="pessoas">quantidade de pessoas</label>
         <p id="erro">Não pode ser zero</p>
-        <div>
+    </div>
+    <div class="inputbox">
             <img src="./imagens/icon-person.svg" alt="icone de pessoa">
             <input type="number" name="pessoas" id="pessoas" placeholder="0">
 
     </div>
     </form>
-        </section>
         <section class="resultados">
             <div class="gorjeta-total">
                 <p><strong>Gorjeta</strong> <br> / pessoa</p>
@@ -52,6 +57,8 @@
                 <p><strong>Total por Pessoa</strong> <br> / pessoa</p>
                 <strong>$0.00</strong>
             </div>
+            </section>
+             <button>Limpar</button>
     </main>
 </body>
 </html>
